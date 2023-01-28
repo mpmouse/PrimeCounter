@@ -30,7 +30,6 @@ class PrimeCounter {
 		long long mTotal;
 		std::atomic<long long> mCounter;
 		std::atomic<long long> mCounter2;
-		std::atomic<long long> mCounter3;
 		std::atomic<unsigned> *mSieve;
 		std::vector<long long> mTopTen;
 

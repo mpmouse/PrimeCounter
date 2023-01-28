@@ -7,7 +7,7 @@ Credit for original algorithm: The Sieve of Adkin was created by A. O. Atkin and
 
 Compile Instructions
 g++ -O3 primecounter.cpp -o primecounter.exe
-./primecounter
+./primecounter.exe
 
 For this assignment I experimentally compared execution times for two different prime counting methods as both sequential and parallelized over eight threads. The first method was a primality test using a ticket system using an atomic counter and a mutex lock for writing to the variables tracking totals. The average execution time running eight threads concurrently was 13 seconds. The second method used implemented the Sieve of Atkin. To allow parallelization, a ticket system was used with two atomic counters along with two sections controlled by tickets. The average execution times for method two using eight threads ranged from 640ms to 780m.
 
